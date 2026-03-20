@@ -109,11 +109,11 @@ function App() {
           </div>
           <div className="border-t border-[#2a2a3d] pt-3">
             <p className="text-[#82cfff] text-xs uppercase tracking-widest mb-1">Aired</p>
-            <p className="text-white text-lg font-semibold">{anime?.aired.string}</p>
+            <p className="text-white text-lg font-semibold">{anime?.aired.string ?? "N/A"}</p>
           </div>
           <div className="border-t border-[#2a2a3d] pt-3">
             <p className="text-[#82cfff] text-xs uppercase tracking-widest mb-1">Synopsis</p>
-            <p className="text-[#a0a0b2] text-base leading-relaxed max-h-32 overflow-y-auto">{anime?.synopsis}</p>
+            <p className="text-[#a0a0b2] text-base leading-relaxed max-h-32 overflow-y-auto">{anime?.synopsis ?? "N/A"}</p>
           </div>
         </div>
         <motion.button
