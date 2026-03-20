@@ -1,73 +1,30 @@
-# React + TypeScript + Vite
+# Anime Randomiser
+Anime Randomiser is a responsive web application that allows users to generate a random anime and view its details. Users can hit the Random Anime button and the application will use Jikan's API (unofficial MyAnimeList API) to fetch a random anime and output these corresponding details: Score, Ranking, Type, Genres, Episodes, Airing Dates and Synopsis. The app utilises unique animations created through the Framer Motion animation library such as the 3D spinning effect of the AnimeCard, the unique animations of buttons and dropdowns. A filtering system also belongs in the app where the user can filter for specific genres of anime that they want the app to generate. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🔧 Technologies
+- HTML
+- CSS
+- Javascript
+- TypeScript
+- NodeJS
+- Framer Motion
+- React Router Dom
+- Asynchronous Programming
+- Tailwind CSS
+- Vite
 
-Currently, two official plugins are available:
+## ✨ Features
+- Generates a random anime
+- Displays insightful details of the generated anime
+- Full responsive design with Tailwind CSS
+- 3D spinning animations
+- Spring physics for natural feeling animations
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🎈 The Process 
+I sometimes hit a slump with what anime too watch, so I decided what better way than to use a random anime generator. Most of these I found on the web were quite boring and static, so I wanted to create something that felt more alive and modern. I started simple with React by building the basic design and made sure the API fetching was all working. Then I used Framer Motion to add some unique animations during the randomising to make it more alive. I then wanted to add an extra filtering system to allow users to filter for a specific genres they want too watch.
 
-## React Compiler
+## 🚦The Website
+Here is the live link: https://anime-randomiser.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🎞️ Preview
+![AnimeRandomiser2](https://github.com/user-attachments/assets/0f914a1d-abb4-4e61-9d74-12990c253d26)
